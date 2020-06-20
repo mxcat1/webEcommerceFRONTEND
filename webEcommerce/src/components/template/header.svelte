@@ -1,7 +1,6 @@
 <script>
-
+    import Menu from './menu.svelte'
 </script>
-
 <header>
     <div class="content-header">
         <div class="logo">
@@ -22,6 +21,7 @@
         </div>
     </div>
 </header>
+<Menu/>
 
 <style>
     header{
@@ -33,6 +33,12 @@
         margin: 1rem;
         justify-content: space-between;
         align-items: center;
+    }
+    .logo{
+        display: flex;
+    }
+    .logo-img{
+        width: 10rem;
     }
     .search-form{
         display: flex;
@@ -49,6 +55,14 @@
     .search-input::placeholder{
         color: #E0DDDD;
     }
+    .search-ico{
+        position: relative;
+        right: 3rem;
+        width: 2rem;
+        height: 2rem;
+        background: url("/img/icons/search.svg") no-repeat;
+        background-size: contain;
+    }
     .opcions{
         display: flex;
         align-items: center;
@@ -63,21 +77,7 @@
     .shop-car{
         margin: 0 2rem;
     }
-    .logo{
-        display: flex;
-    }
-    .logo-img{
-        width: 10rem;
-    }
-    .search-ico{
-        position: relative;
-        right: 3rem;
-        width: 2rem;
-        height: 2rem;
-        background: url("/img/icons/search.svg") no-repeat;
-        background-size: contain;
-    }
-    @media (max-width: 1360px) {
+    @media (max-width: 1366px) {
         header{
             margin: 0 12rem auto;
         }
