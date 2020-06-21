@@ -31,6 +31,7 @@
     .content-header{
         display: flex;
         margin: 1rem;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -46,7 +47,7 @@
     }
     .search-input{
         width: 50rem;
-        height: 2rem;
+        height: 3rem;
         border: 1px #E0DDDD solid;
         border-radius: 4px;
         font-size: 1.6rem;

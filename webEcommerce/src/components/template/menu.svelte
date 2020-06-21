@@ -72,6 +72,7 @@
     .menu{
         margin: 0;
         display: flex;
+        flex-flow: row wrap;
         padding: 0;
         justify-content: center;
         align-items: center;
@@ -98,7 +99,7 @@
     }
     .menu-item:hover>.submenu{
         visibility: visible;
-        height: 17.9rem;
+        height: 19.2rem;
     }
     .submenu{
         height: 0;
