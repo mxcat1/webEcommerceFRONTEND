@@ -11,13 +11,13 @@
             <div class="search-ico"></div>
         </div>
         <div class="opcions">
-            <div class="login">
+            <a href="" class="login">
                 <img src="./img/icons/user.svg" alt="user-login-icons" class="user-login-icon">
                 <p>Acceder</p>
-            </div>
-            <div class="shop-car">
+            </a>
+            <a href="" class="shop-car">
                 <img src="./img/icons/shop-car.svg" alt="shop car">
-            </div>
+            </a>
         </div>
     </div>
 </header>
@@ -71,6 +71,8 @@
     .login{
         display: flex;
         margin: 0 2rem;
+        text-decoration: none;
+        color: black;
     }
     .login>p{
         font-size: 1.6rem;
