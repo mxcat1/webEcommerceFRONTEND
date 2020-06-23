@@ -1,17 +1,18 @@
 <script>
     import Menu from './menu.svelte'
+    import {link} from 'svelte-spa-router'
 </script>
 <header>
     <div class="content-header">
-        <div class="logo">
+        <a href="/" use:link class="logo">
             <img class="logo-img" src="./img/logo.svg" alt="Logo-empresa">
-        </div>
+        </a>
         <div class="search-form">
             <input type="text" class="search-input" id="txtSearch" name="txtSearch" placeholder="Buscar">
             <div class="search-ico"></div>
         </div>
         <div class="opcions">
-            <a href="" class="login">
+            <a href="/Acceder" use:link class="login">
                 <img src="./img/icons/user.svg" alt="user-login-icons" class="user-login-icon">
                 <p>Acceder</p>
             </a>
