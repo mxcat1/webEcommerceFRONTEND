@@ -1,19 +1,24 @@
+<script>
+    import {link} from 'svelte-spa-router'
+
+
+</script>
 <nav class="container-menu">
     <ul class="menu">
         <li class="menu-item">
             <a href="" class="menu-link">Noticias</a>
         </li>
         <li class="menu-item">
-            <a href="" class="menu-link">Computador</a>
+            <a href="/Computador" use:link class="menu-link">Computador</a>
             <ul class="submenu">
                 <li class="submenu-item">
-                    <a href="" class="submenu-link">Juegos</a>
+                    <a href="/Computador/Juegos" use:link class="submenu-link">Juegos</a>
                 </li>
                 <li class="submenu-item">
-                    <a href="" class="submenu-link">Equipos</a>
+                    <a href="/Computador/Equipos" use:link class="submenu-link">Equipos</a>
                 </li>
                 <li class="submenu-item">
-                    <a href="" class="submenu-link">Accesorios</a>
+                    <a href="/Computador/Accesorios" use:link class="submenu-link">Accesorios</a>
                 </li>
             </ul>
         </li>
@@ -86,7 +91,7 @@
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
         color: white;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .menu-item:hover>.menu-link{
         color: #C7A31A;

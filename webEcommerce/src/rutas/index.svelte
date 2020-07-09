@@ -1,6 +1,9 @@
 <script>
+    import {onMount} from 'svelte'
+
     import Banner from '../components/template/banner.svelte'
     import GroupCard from '../components/principal/groupCard.svelte'
+
 
     //	Prueba productos
     let ProductosGrupo1=[
@@ -63,11 +66,32 @@
             "UrlImagenProducto": "./img/muestra_productos/COD_W.jpg"
         }
     ];
+
+    // const uri='https://cheapshark-game-deals.p.rapidapi.com/games?limit=3&title=batman&exact=0';
+    // let games =[]
+    // onMount(async ()=>{
+    //     const res=await fetch(uri,{
+    //         "method": "GET",
+    //         "headers": {
+    //             "x-rapidapi-host": "cheapshark-game-deals.p.rapidapi.com",
+    //             "x-rapidapi-key": "ef432b9507mshc644713f53b062dp1c2f3ajsnc4c224ce186d"
+    //         }
+    //     })
+    //     games=await res.json()
+    //     console.log(games)
+    //     console.log(ProductosGrupo1)
+    //
+    // })
+
 </script>
+<svelte:head>
+    <title>JetGames Store</title>
+</svelte:head>
 <Banner/>
 
 <main class="container-principal">
     <GroupCard nameSection="NOVEDADES" Productos="{ProductosGrupo1}"/>
+<!--    <GroupCard nameSection="NOVEDADES" Productos="{games}"/>-->
     <GroupCard nameSection="PROMOCIONES" Productos="{ProductosGrupo2}"/>
     <GroupCard nameSection="MAS VENDIDOS" Productos="{ProductosGrupo3}"/>
 </main>

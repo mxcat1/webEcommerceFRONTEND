@@ -16,7 +16,7 @@
                 <img src="./img/icons/user.svg" alt="user-login-icons" class="user-login-icon">
                 <p>Acceder</p>
             </a>
-            <a href="" class="shop-car">
+            <a href="/Carrito" use:link class="shop-car">
                 <img src="./img/icons/shop-car.svg" alt="shop car">
             </a>
         </div>

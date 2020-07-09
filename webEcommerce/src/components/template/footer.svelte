@@ -45,6 +45,9 @@
             <p class="text-footer">Correo: JetgamesStore@gmail.com</p>
         </div>
     </div>
+    <div class="copyright">
+        <p>&copy; Todos los derechos reservados 2020 www.jetgames.to</p>
+    </div>
 </footer>
 
 <style>
@@ -119,5 +122,16 @@
         margin: 0;
         padding: 1rem;
         color: #f2f2f2;
+    }
+    .copyright{
+        height: 40px;
+        background: #160067;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright>p{
+        color: white;
+        font-size: 1.2rem;
     }
 </style>

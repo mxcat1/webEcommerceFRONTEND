@@ -1,8 +1,8 @@
 <script>
-    export let texttitle;
+    export let texttitulonormal;
 </script>
 <div class="title-content">
-    <h2 class="title-principal-page">{texttitle}</h2>
+    <h2 class="title-principal-page">{texttitulonormal}</h2>
 </div>
 <style>
     .title-content{
@@ -13,7 +13,7 @@
     .title-principal-page{
         font-size: 2.4rem;
         font-family: "Roboto Light",sans-serif;
-        font-weight: bolder;
-        color: #C7A31A;
+        font-weight: lighter;
+        color: #282e7a;
     }
 </style>

@@ -1,15 +1,21 @@
 <script>
+    import {location} from 'svelte-spa-router'
+    import {link} from 'svelte-spa-router'
+
     import TituloPrincipal from '../components/principal/titleComponent.svelte'
     import InputUsuario from '../components/principal/inputComponent.svelte'
     import ButtonLogin from '../components/principal/botonComponent.svelte'
 </script>
+<svelte:head>
+    <title>{$location.slice(1)}</title>
+</svelte:head>
 <main class="container-principal">
     <TituloPrincipal texttitle="INICIAR SESIÓN"/>
     <div class="content-login">
         <InputUsuario tipoInput="email" idInput="emailUsuario" labelInput="Correo Electronico:" placeholderInput="Ingrese su Correo electronico"/>
         <InputUsuario tipoInput="password" idInput="contraUsuario" labelInput="Contraseña:" placeholderInput="Ingrese su Contraseña"/>
         <ButtonLogin claseBoton="opcional" textoBoton="ACCEDER" tipoBoton="button"/>
-        <p class="text-regitrarse">No tienes una cuenta aun? <a href="" class="link-registrarse">Registrate</a></p>
+        <p class="text-regitrarse">No tienes una cuenta aun? <a href="/Registro" use:link class="link-registrarse">Registrate</a></p>
     </div>
 </main>
 <style>
